@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson:16 Forms</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+        </div>
+
+        <div class="main">
+            <div class="form-appointment">
+                <div class="form-appointment__container">
+
+                    <div class="form-appointment__title title">Make an appointment</div>
+                    <form class="form-appointment__form ">
+                        <div class="form-appointment__items">
+                            <input type="text" id="#name" class="form-appointment__input" autocomplete="off"
+                                placeholder="Name" name="name">
+                            <input type="email" id="#email" class="form-appointment__input" autocomplete="off"
+                                placeholder="Email" name="email">
+                            <input type="tel" id="#tel" class="form-appointment__input" autocomplete="off"
+                                placeholder="Phone number" name="tel">
+                            <select name="select-service" class="form-appointment__input form-appointment__select"
+                                id="#select-service">
+                                <option selected disabled hidden value="select-service">Select Service</option>
+                                <option value="1">Пункт №1</option>
+                                <option value="2">Пункт №2</option>
+                                <option value="3">Пункт №3</option>
+                                <option value="4">Пункт №4</option>
+                            </select>
+                            <textarea name="text" id="textarea" class="form-appointment__textarea" autocomplete="off"
+                                placeholder="Tell us about your puppers include his/her name "></textarea>
+                        </div>
+                        <button type="submit" class="form-appointment__button button">Make an
+                            Appointment</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="summery">
+                <div class="summery__container">
+                    <h3 class="summery__name-cart">Summary</h3>
+                    <div class="summery__item">Estimate Shipping and Tax</div>
+                    <div class="summery__text">Enter your destination to get a shipping estimate.</div>
+                    <form action="#" class="summery__form">
+                        <label for="country" class="summery__label">Country</label>
+                        <select name="country" id="#country" class="summery__input">
+                            <option selected disabled hidden value="country">Select country</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Italy">Italy</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <label for="state" class="summery__label">State/Province</label>
+                        <input type="text" id="#state" autocomplete="off" class="summery__input">
+
+                        <label for="zip" class="summery__label">Zip/Postal Code</label>
+                        <input type="text" id="#zip" autocomplete="off" class="summery__input summery__input_margin">
+
+                        <label for="standard-rate" class="summery__label">Standard Rate</label>
+                        <div>
+                            <div class="summery__radio summery__radio_margin10">
+                                <input type="radio" name="delivery" id="standard-rate" checked class="summery__radio">
+                                <label for="standard-rate" class="summery__radio">
+                                    Price may vary depending on the item/destination. Shop Staff will contact you.
+                                    $21.00
+                                </label>
+                            </div>
+
+                            <label for="pickup" class="summery__label">Pickup from store</label>
+                            <div class="summery__radio summery__radio_margin10">
+                                <input type="radio" name="delivery" id="pickup" class="summery__radio">
+                                <label for="pickup" class="summery__radio">1234 Street Adress, City Address, 1234
+                                    $0.00</label>
+                            </div>
+                        </div>
+
+                        <div class="summery__item">Apply Discount Code</div>
+
+                        <label for="discount" class="summery__label">Enter discount code</label>
+                        <input type="text" id="#discount" autocomplete="off" placeholder="Enter discount code"
+                            class="summery__input summery__input_placeholder summery__input_margin28">
+                        <button type="submit" class="summery__button">Apply discount</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="registered">
+                <div class="registered__container">
+                    <div class="registered__title">Registered Customers</div>
+                    <div class="registered__text">If you have an account, sign in with your email address.</div>
+                    <form action="#" class="registered__form">
+                        <label for="email-reg" class="registered__label">Your Email <span
+                                class="text-red">*</span></label>
+                        <input type="email" id="#email-reg" class="registered__input" placeholder="Your Email">
+                        <label for="password" class="registered__label">Your password
+                            <span class="text-red">*</span></label>
+                        <input type="password" class="registered__input" placeholder="Your password" id="#password">
+                        <button type="submit" class="registered__button">Sign In</button>
+                        <button type="button" class="registered__link"><a href="#">Forgot your
+                                password?</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+    </div>
+</body>
+
+</html>
