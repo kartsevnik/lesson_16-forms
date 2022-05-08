@@ -18,29 +18,40 @@
         <div class="main">
             <div class="form-appointment">
                 <div class="form-appointment__container">
-
                     <div class="form-appointment__title title">Make an appointment</div>
-                    <form class="form-appointment__form ">
-                        <div class="form-appointment__items">
-                            <input type="text" id="#name" class="form-appointment__input" autocomplete="off"
-                                placeholder="Name" name="name">
-                            <input type="email" id="#email" class="form-appointment__input" autocomplete="off"
-                                placeholder="Email" name="email">
-                            <input type="tel" id="#tel" class="form-appointment__input" autocomplete="off"
-                                placeholder="Phone number" name="tel">
-                            <select name="select-service" class="form-appointment__input form-appointment__select"
-                                id="#select-service">
-                                <option selected disabled hidden value="select-service">Select Service</option>
-                                <option value="1">Пункт №1</option>
-                                <option value="2">Пункт №2</option>
-                                <option value="3">Пункт №3</option>
-                                <option value="4">Пункт №4</option>
-                            </select>
-                            <textarea name="text" id="textarea" class="form-appointment__textarea" autocomplete="off"
-                                placeholder="Tell us about your puppers include his/her name "></textarea>
+                    <form class="form-appointment__form">
+                        <div class="form-appointment__top">
+                            <div class="form-appointment__line">
+                                <input type="text" id="#name" class="form-appointment__input" autocomplete="off"
+                                    placeholder="Name" name="name">
+                            </div>
+                            <div class="form-appointment__line">
+                                <input type="email" id="#email" class="form-appointment__input" autocomplete="off"
+                                    placeholder="Email" name="email">
+                            </div>
+                            <div class="form-appointment__line">
+                                <input type="tel" id="#tel" class="form-appointment__input" autocomplete="off"
+                                    placeholder="Phone number" name="tel">
+                            </div>
+                            <div class="form-appointment__line">
+                                <select name="select-service" class="form-appointment__input form-appointment__select"
+                                    id="#select-service">
+                                    <option selected disabled hidden value="select-service">Select Service</option>
+                                    <option value="1">Пункт №1</option>
+                                    <option value="2">Пункт №2</option>
+                                    <option value="3">Пункт №3</option>
+                                    <option value="4">Пункт №4</option>
+                                </select>
+                            </div>
+                            <div class="form-appointment__textarea">
+                                <textarea name="text" id="textarea" class="form-appointment__textarea-form"
+                                    autocomplete="off"
+                                    placeholder="Tell us about your puppers include his/her name "></textarea>
+                            </div>
                         </div>
-                        <button type="submit" class="form-appointment__button button">Make an
-                            Appointment</button>
+                        <div class="form-appointment__bottom">
+                            <button type="submit" class="form-appointment__button button">Make an Appointment</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -51,6 +62,7 @@
                     <div class="summery__item">Estimate Shipping and Tax</div>
                     <div class="summery__text">Enter your destination to get a shipping estimate.</div>
                     <form action="#" class="summery__form">
+
                         <label for="country" class="summery__label">Country</label>
                         <select name="country" id="#country" class="summery__input">
                             <option selected disabled hidden value="country">Select country</option>
