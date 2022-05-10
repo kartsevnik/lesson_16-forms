@@ -131,6 +131,7 @@ body {
     color: #FFFFFF;
     background: #5D62B5;  
     min-height: 180px;
+    max-height: 300px;
     resize: vertical;
     padding: 17px 0px 0px 23px;
     
